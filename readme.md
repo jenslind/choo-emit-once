@@ -6,7 +6,7 @@ npm install choo-emit-once
 ```
 
 ## Usage
-```
+```javascript
 const choo = require('choo')
 const emitOnce = require('choo-emit-once')
 
