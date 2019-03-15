@@ -1,0 +1,12 @@
+{
+  "name": "choo-emit-once",
+  "version": "0.1.0",
+  "description": "Choo emit.once",
+  "repository": "jenslind/choo-emit-once",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Jens Lind <jens@jensl.se>",
+  "license": "MIT"
+}
