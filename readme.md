@@ -16,6 +16,8 @@ app.use(emitOnce)
 
 app.route('/', function (state, emit) {
   emit.once('event-name')
+  emit.clear('event-name')
+  emit.clear()
 })
 
 app.mount('body')

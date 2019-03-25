@@ -12,7 +12,18 @@ function emitOnce (state, emitter, app) {
     this.apply(null, args)
   }
 
+  app.emit.clear = clear
+
   emitter.on(state.events.NAVIGATE, function () {
-    emitted = []
+    clear()
   })
+
+  function clear (name = null) {
+    if (name) {
+      emitted = emitted.filter(item => item !== name)
+      return
+    }
+
+    emitted = []
+  }
 }
